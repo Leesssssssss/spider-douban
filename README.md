@@ -13,4 +13,4 @@ node spider.js
 ```
 
 #运行结果
-![截图](https://github.com/Leesssssssss/spider-douban/1.png)
+![截图](https://github.com/Leesssssssss/spider-douban/blob/master/1.png)
