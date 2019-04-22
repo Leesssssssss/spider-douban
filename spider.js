@@ -97,18 +97,17 @@ function getData(cookie) {
     // 写入表格
     workbook.xlsx.writeFile('movie.xlsx')
 
-    // 爬取1-10页所有数据
+    // 爬取1-10页所有数据，每页限制25条，可以从每页的地址栏看出不同
     index += 25;
     if (index <= 225) {
       getData();
     } else {
-      console.log('over');
+      console.log('爬取完毕');
     }
   })
 }
 
 // 执行
 getCookie((err, cookie) => {
-  console.log(cookie);
-  getData()
+  getData();
 })
